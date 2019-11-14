@@ -17,6 +17,11 @@ jobs:
 
     - name: Setup PostgreSQL
       uses: Harmon758/postgresql-action@v1.0.0
+      with: 
+        postgresql version: 11
+        postgresql db: Scholanova
+        postgresql user: postgres
+        postgres password: 123456
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
