@@ -1,0 +1,5 @@
+name: Continuous Integration Workflow
+
+on: [push]
+    build:
+        
