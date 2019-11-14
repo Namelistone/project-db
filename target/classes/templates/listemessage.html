@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <h1>Liste des messages </h1>
+    
+	<table>
+		<tr th:each="message: ${messages}">
+			<td th:text="${message.id}"></td>
+        	<td th:text="${message.content}"></td>
+      	</tr>
+	</table>
+</body>
+</html>
